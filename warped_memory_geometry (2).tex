@@ -1,0 +1,135 @@
+
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
+
+\title{\textbf{Warped Memory Geometry: Feedback Between Coherence Fields and Compactified Curvature}}
+\author{Wayne Fortes}
+\date{June 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We extend our six-dimensional emergent spacetime model by introducing a dynamic warp field \( \sigma(x) \) that governs the geometry of a compactified 2-sphere. The coherence field \( \tau_2(\theta, \phi, t) \), defined on this internal space, is shown to both influence and respond to its curvature. This bidirectional feedback creates a coherent memory mechanism wherein localized emergent phenomena (\( \tau_3 \)) result from resonance between field density and compactification geometry. The resulting model enriches the coupling between hidden coherence structures and observable 4D spacetime, offering testable predictions involving localized curvature shifts and oscillatory gravitational effects.
+\end{abstract}
+
+\section{Introduction}
+The previous formulation of a six-dimensional emergent curvature model demonstrated how a scalar field \( \tau_2 \) on a compact 2-sphere could influence the effective 4D Einstein equations. However, the geometry of the internal space was held static. In this paper, we upgrade the model by making the internal curvature dynamic. This allows \( \tau_2 \) to act as both a field and a geometric agent, and unlocks feedback behavior critical to understanding how coherence and emergence propagate in a curved manifold.
+
+\section{Geometric Framework}
+We define the 6D spacetime manifold \( \mathcal{M}^6 = M^4 \times S^2 \), with coordinates:
+\begin{itemize}
+    \item \( x^\mu = (t, x, y, z) \) on the observable 4D spacetime
+    \item \( (\theta, \phi) \) on the compactified 2-sphere
+\end{itemize}
+
+The metric ansatz is:
+\[
+ds^2 = \eta_{\mu\nu} dx^\mu dx^\nu + e^{2\sigma(x)} (d\theta^2 + \sin^2\theta \, d\phi^2)
+\]
+Here \( \sigma(x) \) is a scalar warp field on 4D spacetime that determines the effective radius and curvature of the internal sphere.
+
+\section{Coherence Field Dynamics}
+We define a real scalar field \( \tau_2(\theta, \phi, t) \) with Lagrangian density:
+\[
+\mathcal{L}_{\tau_2} = -\frac{1}{2} \left[ (\partial_t \tau_2)^2 + \frac{1}{e^{2\sigma}} |\nabla_{S^2} \tau_2|^2 + m^2 \tau_2^2 \right]
+\]
+
+The corresponding field equation is:
+\[
+-\partial_t^2 \tau_2 + \frac{1}{e^{2\sigma}} \Delta_{S^2} \tau_2 = m^2 \tau_2
+\]
+
+Solutions decompose via spherical harmonics:
+\[
+\tau_2(\theta, \phi, t) = \sum_{\ell=0}^\infty \sum_{m=-\ell}^{\ell} a_{\ell m}(t) Y_{\ell m}(\theta, \phi)
+\]
+
+\section{Curvature Feedback Equation}
+We define the energy density of \( \tau_2 \) as:
+\[
+T_{00}(\tau_2) = \frac{1}{2} \left[ (\partial_t \tau_2)^2 + \frac{1}{e^{2\sigma}} |\nabla_{S^2} \tau_2|^2 + m^2 \tau_2^2 \right]
+\]
+
+Integrating over \( S^2 \):
+\[
+E_{\tau_2}(x) = \int_{S^2} d\Omega \, T_{00}(\tau_2)
+\]
+
+The warp field \( \sigma(x) \) then satisfies:
+\[
+\Box_4 \sigma = \alpha \, E_{\tau_2}(x)
+\]
+where \( \Box_4 \) is the d'Alembertian in 4D and \( \alpha \) is a coupling constant.
+
+\section{Modified Einstein Equations}
+The effective 4D Einstein tensor incorporates contributions from both \( E_{\tau_2} \) and the kinetic term of \( \sigma \):
+\[
+G_{\mu\nu} = \kappa \left( T_{\mu\nu}^{(\tau_2)} + \partial_\mu \sigma \, \partial_\nu \sigma - \frac{1}{2} \eta_{\mu\nu} (\partial \sigma)^2 \right)
+\]
+
+This establishes \( \sigma \) as both a warp field and a mediator of coherence feedback.
+
+\section{Emergence Function \( \tau_3 \)}
+We redefine \( \tau_3(t) \) not as binary, but as a smooth activation:
+\[
+\tau_3(t) = \frac{1}{1 + \exp(-\beta (E_{\tau_2} - E_{\text{crit}}))}
+\]
+
+This sigmoid transition captures partial coherence, allowing graded emergence and stable attractor behavior.
+
+
+
+\section*{Stabilizing Potential and Geometric Elasticity}
+
+To ensure stability of the warp field \(\sigma(x)\), we introduce a scalar potential:
+\[
+V(\sigma) = \frac{1}{2} M^2 \sigma^2 + \frac{\lambda}{4} \sigma^4
+\]
+This potential acts as a restoring force that prevents runaway growth or collapse of the internal geometry. The modified field equation for \(\sigma(x)\) becomes:
+\[
+\Box_4 \sigma = \alpha \, E_{\tau_2}(x) - \frac{dV}{d\sigma} = \alpha \, E_{\tau_2}(x) - M^2 \sigma - \lambda \sigma^3
+\]
+
+This equation balances coherence-driven expansion with geometric elasticity, allowing for controlled deformation of the compactified 2-sphere. The parameters \(M\) and \(\lambda\) determine the preferred compactification radius and the nonlinearity of the response, respectively. This mechanism is essential for maintaining a stable background geometry while permitting local emergence events.
+
+\section{Conclusion and Future Work}
+We have proposed a bidirectional geometric model where curvature and coherence co-evolve within a six-dimensional framework. The introduction of a warp field \( \sigma \) allows curvature to respond to \( \tau_2 \) dynamics and close the loop on emergent behavior. Future work includes coupling matter fields to \( \tau_2 \), simulating \( \tau_3 \) cascades, and identifying measurable signatures in gravitational waveforms or localized curvature fluctuations.
+
+\end{document}
+
+\begin{thebibliography}{9}
+
+\bibitem{misner}
+C.~W. Misner, K.~S. Thorne, and J.~A. Wheeler,
+\textit{Gravitation},
+W. H. Freeman, 1973.
+
+\bibitem{kaluza}
+T. Appelquist, A. Chodos, and P.~G.~O. Freund,
+\textit{Modern Kaluza-Klein Theories},
+Addison-Wesley, 1987.
+
+\bibitem{birrell}
+N.~D. Birrell and P.~C.~W. Davies,
+\textit{Quantum Fields in Curved Space},
+Cambridge Monographs on Mathematical Physics, 1982.
+
+\bibitem{randall}
+L. Randall and R. Sundrum,
+``An Alternative to Compactification,''
+\textit{Physical Review Letters}, vol. 83, no. 23, pp. 4690–4693, 1999.
+
+\bibitem{arkani}
+N. Arkani-Hamed, S. Dimopoulos, and G. Dvali,
+``The Hierarchy Problem and New Dimensions at a Millimeter,''
+\textit{Physics Letters B}, vol. 429, pp. 263–272, 1998.
+
+\end{thebibliography}
