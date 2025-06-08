@@ -1,0 +1,44 @@
+
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{Supplement to Paper 3:\\On the Local Structure of Coherence Fields and Emergence Switching}
+\author{Wayne Fortes}
+\date{June 2025}
+
+\begin{document}
+\maketitle
+
+\section*{Purpose}
+
+This addendum refines the interpretation of the coherence field $\tau_2$ presented in Papers 1--3. Originally defined strictly on the compactified 2-sphere $S^2$, $\tau_2$ is here generalized to the form:
+\[
+\tau_2 = \tau_2(x^\mu, \theta, \phi, t)
+\]
+This represents a scalar coherence field that varies across both internal geometry and 4D spacetime. This refinement allows the coherence energy $E_{\tau_2}(x)$ to be computed locally and accurately, enabling physically meaningful activation of the emergence switch $\tau_3(x)$.
+
+\section*{Implications}
+
+\begin{itemize}
+    \item $\tau_2$ now captures spatial and temporal coherence patterns that differ between regions of 4D spacetime.
+    \item The coherence energy functional:
+    \[
+    E_{\tau_2}(x) = \int_{S^2} d\Omega \left[ \frac{1}{2}(\partial_t \tau_2)^2 + \frac{1}{2e^{2\sigma}} |\nabla_{S^2} \tau_2|^2 + \frac{1}{2} m^2 \tau_2^2 \right]
+    \]
+    remains structurally unchanged, but is now interpreted as a localized energy density indexed by $x^\mu$.
+    \item This clarifies and justifies the use of a spatially localized emergence function:
+    \[
+    \tau_3(x) = \frac{1}{1 + \exp(-\beta (E_{\tau_2}(x) - E_{\text{crit}}))}
+    \]
+\end{itemize}
+
+\section*{Continuity of Theory}
+
+No equations or mechanisms in Papers 1--3 are invalidated by this clarification. This supplement simply updates the interpretation of the fields to match their use in Paper 3 and future derivations, including the upcoming Paper 4.
+
+\section*{Acknowledgments}
+
+This refinement was prompted by reviewer feedback (Gemini, 2025), whose observation regarding the apparent mismatch in domain dependence of $\tau_2$ was both accurate and helpful in progressing the model toward internal consistency and physical relevance.
+
+\end{document}
